@@ -27,3 +27,6 @@ langArray.ru = ['Пн','Вт','Ср','Чт','Пт','Сб','Вс'];
 langArray.en = ['Mo','Tu','We','Th','Fr','Sa','Su'];
 let lang2 =  prompt("Выберите язык : (введите ru или en)");
 console.log(langArray[lang2]);
+let namePerson = prompt("Введите имя :");
+let name1 = namePerson == "Артем" ? console.log("директор") : 
+namePerson == "Александр" ? console.log("преподаватель") : console.log("студент");
