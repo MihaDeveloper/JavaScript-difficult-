@@ -1,4 +1,5 @@
-/* let lang = prompt("Выберите язык : (введите ru или en)");
+'use strict';
+let lang = prompt("Выберите язык : (введите ru или en)");
 if (lang == "ru") {
    console.log("Пн,Вт,Ср,Чт,Пт,Сб,Вс");
 }
@@ -20,9 +21,9 @@ switch(lang1){
     }
     default : alert("Вы допустили ошибку, попробуйте еще раз!");
     break;
-    } */
+    }
 let langArray = [ ] ;
-langArray['ru'] = ['Пн','Вт','Ср','Чт','Пт','Сб','Вс'];
-langArray['en'] = ['Mo','Tu','We','Th','Fr','Sa','Su'];
+langArray.ru = ['Пн','Вт','Ср','Чт','Пт','Сб','Вс'];
+langArray.en = ['Mo','Tu','We','Th','Fr','Sa','Su'];
 let lang2 =  prompt("Выберите язык : (введите ru или en)");
 console.log(langArray[lang2]);
