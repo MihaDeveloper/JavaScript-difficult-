@@ -1,5 +1,5 @@
 'use strict';
-let value = prompt("Введите необходимое значение");
+let value = "Беспорядочный набор букв аваыпдfjgjkвалрылрыар";
 const argument = function (value1) {
     if (typeof value1 !== "string") {
        return 'Необходимо ввести строчное значение';
