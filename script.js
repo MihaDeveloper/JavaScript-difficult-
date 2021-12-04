@@ -1,16 +1,35 @@
 'use strict';
-let value = "Беспорядочный набор букв аваыпдfjgjkвалрылрыар";
-const argument = function (value1) {
-    if (typeof value1 !== "string") {
-       return 'Необходимо ввести строчное значение';
-    } else {
-       value1 = value1.trim();
-       if (value1.length>30) {
-           return value1.slice(0,29) + '...' ;
-       }
-       else {
-       return value1;
-       }
+ let arr= ['123423','45545','7899','2201','362','21','41228'];
+
+const value = function(){
+   for (let i=0; i<7; i++){
+      if (arr[i].startsWith('2') || arr[i].startsWith('4')){
+        console.log( arr[i]);
+      }
+ 
+    
+   }
+ 
+};
+value();
+
+ const simpleValue = function(){
+
+for (let i = 2; i <= 100; i++) {
+    let check = 1;
+    if ( i % 2 != 0)
+    {
+        for (let j = 3; j*j <= i ; j+=2)
+        {
+            if (i%j==0)
+            {
+                check=0;
+                break;
+            }
+        }
     }
+    else if (i != 2) {check = 0;}
+    if (check==1) {console.log(i);}
+}
  };
- alert(argument(value));
+simpleValue();
